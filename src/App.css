@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", "Times New Roman", serif;
+}
+
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+  z-index: 2000;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #005aaa;
+  font-family: "Roboto", "Times New Roman";
+  font-size: 0.9em;
+  width: 10em;
+  height: 3em;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+}
+
+.swal2-title {
+  font-size: 1.5em;
+}
