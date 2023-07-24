@@ -1,12 +1,8 @@
-// Libraries
 import { Box, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// Functions
 import authService from "../services/auth";
-// Components
 import StyledButton from "../../Shared/Button";
-// Images
 import img from "./images/Login.png";
 import StyledLogin from "./Login.styled";
 
@@ -25,7 +21,6 @@ const Login = () => {
 
   const handleChange = (e) => {
     const value = e.target.value;
-
     setData({
       ...data,
       [e.target.name]: value,
@@ -34,7 +29,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       await authService.login(data).then(() => {
         navigate("/admin/panel");
